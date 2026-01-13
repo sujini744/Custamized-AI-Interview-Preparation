@@ -13,7 +13,7 @@ import streamlit as st
 
 
 # Configure Google Gemini AI
-os.environ["API_KEY"] = 'AIzaSyBdj4P28uwm9oOHLYRBAzEF7k4I1r3zh3s'
+os.environ["API_KEY"] = ""
 genai.configure(api_key=os.environ["API_KEY"])
 
 # User authentication functions
@@ -2267,4 +2267,5 @@ def get_user_interview_history(username):
         return []
 
 if __name__ == "__main__":
+
     main()
